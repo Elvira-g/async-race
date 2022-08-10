@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
-    <title>async-race</title>
-    <style>
-        .container {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- <link rel="stylesheet" href="./style.css"> --><title>async-race</title><style>.container {
     width: 95%;
     padding: 60px 0;
     box-sizing: border-box;
@@ -48,7 +40,7 @@
 .controls {
     display: flex;
     gap: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 #garage h1, .winners-block h1 {
@@ -64,24 +56,44 @@
     margin-bottom: 30px;
 }
 
+.car-btns-block {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-name {
+    width: 100%;
+}
+
 .road {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #5c5959;
+    box-sizing: border-box;
 }
 
 .flag {
-    position: absolute;
-    right: 15%;
-    top: 40px;
+
 }
 
 .pagination {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 40px;
 }
-    </style>
-<script defer="defer" src="bundle.js"></script></head>
-<body>
-    <!-- <script src="./index.js"></script> -->
-</body>
-</html>
+
+.message {
+    display: none;
+
+}
+
+.visible {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: calc(50% - 200px);
+}</style><script defer="defer" src="bundle.js"></script></head><body><!-- <script src="./index.js"></script> --></body></html>
